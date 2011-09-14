@@ -6,7 +6,7 @@ Summary:	smokekde - A SMOKE library
 Summary(pl.UTF-8):	smokekde - Biblioteka SMOKE
 Name:		smokekde
 Version:	4.7.1
-Release:	0.1
+Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
@@ -68,14 +68,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README
+%doc AUTHORS
 %attr(755,root,root) %{_libdir}/libsmoke*.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libsmoke*.so.?
 
 %files devel
 %defattr(644,root,root,755)
-%{_includedir}/smoke/p*.h
-%{_includedir}/smoke/q*.h
-%{_datadir}/smokegen/qt-config.xml
-%{_datadir}/smokegen/qtdefines
+%{_includedir}/smoke/*.h
+%{_datadir}/smokegen/kde-config.xml
 %attr(755,root,root) %{_libdir}/libsmoke*.so
