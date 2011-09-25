@@ -6,7 +6,7 @@ Summary:	smokekde - A SMOKE library
 Summary(pl.UTF-8):	smokekde - Biblioteka SMOKE
 Name:		smokekde
 Version:	4.7.1
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
@@ -20,7 +20,7 @@ BuildRequires:	kde4-kdepimlibs-devel >= %{version}
 BuildRequires:	okular-devel >= %{version}
 BuildRequires:	smokeqt-devel >= %{version}
 BuildRequires:	soprano-devel
-Obsoletes:	kde4-kdebindings-smoke-kde < 4.7.0
+Obsoletes:	kde4-kdebindings-smoke-kde < 4.6.99
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -36,7 +36,7 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki %{name}
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	smokeqt-devel >= %{version}
-Obsoletes:	kde4-kdebindings-smoke-devel < 4.7.0
+Obsoletes:	kde4-kdebindings-smoke-devel < 4.6.99
 
 %description devel
 Header files for %{name} library.
