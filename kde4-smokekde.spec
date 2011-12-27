@@ -6,7 +6,7 @@ Summary:	smokekde - A SMOKE library
 Summary(pl.UTF-8):	smokekde - Biblioteka SMOKE
 Name:		smokekde
 Version:	4.7.3
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
