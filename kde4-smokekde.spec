@@ -1,26 +1,27 @@
 %define         _state          stable
 %define         orgname         smokekde
-%define         qtver           4.7.4
+%define         qtver           4.8.0
 
 Summary:	smokekde - A SMOKE library
 Summary(pl.UTF-8):	smokekde - Biblioteka SMOKE
-Name:		smokekde
-Version:	4.7.3
-Release:	2
+Name:		kde4-smokekde
+Version:	4.8.0
+Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	570b404211229d753f893a8f381e32c9
+# Source0-md5:	c86cce394b795e0be5ebb25f428f3726
 URL:		http://www.kde.org/
 BuildRequires:	akonadi-devel
 BuildRequires:	attica-devel
-BuildRequires:	kate-devel >= %{version}
+BuildRequires:	kde4-kate-devel >= %{version}
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	kde4-kdepimlibs-devel >= %{version}
-BuildRequires:	okular-devel >= %{version}
-BuildRequires:	smokeqt-devel >= %{version}
+BuildRequires:	kde4-okular-devel >= %{version}
+BuildRequires:	kde4-smokeqt-devel >= %{version}
 BuildRequires:	soprano-devel
 Obsoletes:	kde4-kdebindings-smoke-kde < 4.6.99
+Obsoletes:	smokekde <= 4.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,8 +36,9 @@ Summary:	Header files for %{name} library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki %{name}
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	smokeqt-devel >= %{version}
-Obsoletes:	kde4-kdebindings-smoke-devel < 4.6.99
+Requires:	kde4-smokeqt-devel >= %{version}
+Obsoletes:	kde4-kdebinings-smoke-devel < 4.6.99
+Obsoletes:	smokekde-devel <= 4.8.0
 
 %description devel
 Header files for %{name} library.
@@ -45,7 +47,7 @@ Header files for %{name} library.
 Pliki nagłówkowe biblioteki %{name}.
 
 %prep
-%setup -q
+%setup -q -n %{orgname}-%{version}
 
 %build
 install -d build
