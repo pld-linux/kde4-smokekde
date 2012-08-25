@@ -1,3 +1,13 @@
+# TODO:
+#-----------------------------------------------------------------------------
+#-- The following OPTIONAL packages could NOT be located on your system.
+#-- Consider installing them to enable more features from this software.
+#-----------------------------------------------------------------------------
+#   * Nepomuk  <http://www.kde.org>
+#     Nepomuk libraries
+#     Needed to compile Nepomuk bindings
+#-----------------------------------------------------------------------------
+
 %define         _state          stable
 %define         orgname         smokekde
 %define         qtver           4.8.0
