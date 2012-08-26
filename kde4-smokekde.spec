@@ -1,13 +1,3 @@
-# TODO:
-#-----------------------------------------------------------------------------
-#-- The following OPTIONAL packages could NOT be located on your system.
-#-- Consider installing them to enable more features from this software.
-#-----------------------------------------------------------------------------
-#   * Nepomuk  <http://www.kde.org>
-#     Nepomuk libraries
-#     Needed to compile Nepomuk bindings
-#-----------------------------------------------------------------------------
-
 %define         _state          stable
 %define         orgname         smokekde
 %define         qtver           4.8.0
@@ -16,7 +6,7 @@ Summary:	smokekde - A SMOKE library
 Summary(pl.UTF-8):	smokekde - Biblioteka SMOKE
 Name:		kde4-smokekde
 Version:	4.9.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
@@ -29,6 +19,7 @@ BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	kde4-kdepimlibs-devel >= %{version}
 BuildRequires:	kde4-okular-devel >= %{version}
 BuildRequires:	kde4-smokeqt-devel >= %{version}
+BuildRequires:	shared-desktop-ontologies-devel
 BuildRequires:	soprano-devel
 Obsoletes:	kde4-kdebindings-smoke-kde < 4.6.99
 Obsoletes:	smokekde <= 4.8.0
