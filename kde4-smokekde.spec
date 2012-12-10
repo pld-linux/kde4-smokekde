@@ -5,12 +5,12 @@
 Summary:	smokekde - A SMOKE library
 Summary(pl.UTF-8):	smokekde - Biblioteka SMOKE
 Name:		kde4-smokekde
-Version:	4.9.3
+Version:	4.9.4
 Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	e5949c0036f05b3c3828b91adf3a47aa
+# Source0-md5:	7fb473955336b69bfa05ce221f112e31
 URL:		http://www.kde.org/
 BuildRequires:	akonadi-devel
 BuildRequires:	attica-devel
