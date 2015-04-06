@@ -18,6 +18,7 @@ BuildRequires:	kde4-kate-devel >= %{version}
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	kde4-kdepimlibs-devel >= %{version}
 BuildRequires:	kde4-okular-devel >= %{version}
+BuildRequires:	kde4-smokegen-devel >= 4.14.3-3
 BuildRequires:	kde4-smokeqt-devel >= %{version}
 BuildRequires:	shared-desktop-ontologies-devel
 BuildRequires:	soprano-devel
