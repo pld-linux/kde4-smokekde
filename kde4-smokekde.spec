@@ -6,7 +6,7 @@ Summary:	smokekde - A SMOKE library
 Summary(pl.UTF-8):	smokekde - Biblioteka SMOKE
 Name:		kde4-smokekde
 Version:	4.14.3
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
@@ -52,6 +52,7 @@ Pliki nagłówkowe biblioteki %{name}.
 %setup -q -n %{orgname}-%{version}
 
 %build
+export CXXFLAGS="%{rpmcxxflags} -std=gnu++98"
 install -d build
 cd build
 %cmake \
